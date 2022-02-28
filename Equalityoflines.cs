@@ -13,7 +13,7 @@ namespace LineComparisonProblem
             float lengthA;
             float lengthB;
 
-            Console.WriteLine("Enter the corordinates of line Ax1");
+            Console.WriteLine("Enter the corordinates of line Ax1"); //line A
             int Ax1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter the corordinates of line Ax2");
             int Ax2 = Convert.ToInt32(Console.ReadLine());
@@ -22,7 +22,7 @@ namespace LineComparisonProblem
             Console.WriteLine("Enter the corordinates of line Ay2");
             int Ay2 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Enter the corordinates of 2nd line Bx1");
+            Console.WriteLine("Enter the corordinates of 2nd line Bx1"); //lineB
             int Bx1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter the corordinates of line Bx2");
             int Bx2 = Convert.ToInt32(Console.ReadLine());
@@ -46,9 +46,13 @@ namespace LineComparisonProblem
                 Console.WriteLine("lineA and lineB are of equal length");
 
             }
+            else if(lengthA >lengthB)
+            {
+                Console.WriteLine("length of LineA is greater than lineB ");
+            }
             else
             {
-                Console.WriteLine("LineA and lineB are  of unequal length");
+                Console.WriteLine("length of lineB is greater than lineA");
             }
         }
     }
